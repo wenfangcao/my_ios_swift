@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370A7FA921CB2FDE00DE4786 /* SwitchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370A7FA821CB2FDE00DE4786 /* SwitchingViewController.swift */; };
+		370A7FAB21CB309200DE4786 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370A7FAA21CB309200DE4786 /* BlueViewController.swift */; };
+		370A7FAD21CB30A400DE4786 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370A7FAC21CB30A400DE4786 /* YellowViewController.swift */; };
 		37D7C87721CA4D1000A52E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7C87621CA4D1000A52E93 /* AppDelegate.swift */; };
-		37D7C87921CA4D1000A52E93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7C87821CA4D1000A52E93 /* ViewController.swift */; };
 		37D7C87C21CA4D1000A52E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D7C87A21CA4D1000A52E93 /* Main.storyboard */; };
 		37D7C87E21CA4D1000A52E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D7C87D21CA4D1000A52E93 /* Assets.xcassets */; };
 		37D7C88121CA4D1000A52E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D7C87F21CA4D1000A52E93 /* LaunchScreen.storyboard */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		370A7FA821CB2FDE00DE4786 /* SwitchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewController.swift; sourceTree = "<group>"; };
+		370A7FAA21CB309200DE4786 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		370A7FAC21CB30A400DE4786 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		37D7C87321CA4D1000A52E93 /* my_ios_8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_ios_8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D7C87621CA4D1000A52E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37D7C87821CA4D1000A52E93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37D7C87B21CA4D1000A52E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37D7C87D21CA4D1000A52E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D7C88021CA4D1000A52E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				37D7C87621CA4D1000A52E93 /* AppDelegate.swift */,
-				37D7C87821CA4D1000A52E93 /* ViewController.swift */,
 				37D7C87A21CA4D1000A52E93 /* Main.storyboard */,
 				37D7C87D21CA4D1000A52E93 /* Assets.xcassets */,
 				37D7C87F21CA4D1000A52E93 /* LaunchScreen.storyboard */,
 				37D7C88221CA4D1000A52E93 /* Info.plist */,
+				370A7FA821CB2FDE00DE4786 /* SwitchingViewController.swift */,
+				370A7FAA21CB309200DE4786 /* BlueViewController.swift */,
+				370A7FAC21CB30A400DE4786 /* YellowViewController.swift */,
 			);
 			path = my_ios_8;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37D7C87921CA4D1000A52E93 /* ViewController.swift in Sources */,
+				370A7FAD21CB30A400DE4786 /* YellowViewController.swift in Sources */,
 				37D7C87721CA4D1000A52E93 /* AppDelegate.swift in Sources */,
+				370A7FAB21CB309200DE4786 /* BlueViewController.swift in Sources */,
+				370A7FA921CB2FDE00DE4786 /* SwitchingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4HP65P3X42;
+				DEVELOPMENT_TEAM = V8K695628S;
 				INFOPLIST_FILE = my_ios_8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4HP65P3X42;
+				DEVELOPMENT_TEAM = V8K695628S;
 				INFOPLIST_FILE = my_ios_8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
