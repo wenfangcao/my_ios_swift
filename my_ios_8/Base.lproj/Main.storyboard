@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ivP-ro-me0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,6 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="913" y="220"/>
         </scene>
         <!--Blue View Controller-->
         <scene sceneID="fhH-2B-aTx">
@@ -63,6 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bf4-Bf-WkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-614" y="67"/>
         </scene>
         <!--Yellow View Controller-->
         <scene sceneID="Ip2-zC-nQu">
@@ -87,7 +89,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eit-Nu-NLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="115"/>
+            <point key="canvasLocation" x="1633" y="111"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="8Ez-jH-Zna">
+            <objects>
+                <viewController id="ivP-ro-me0" customClass="TwoViewController" customModule="my_ios_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hPf-TB-Mzl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xZT-4h-hry">
+                                <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ivP-ro-me0" id="Ewi-D2-In5"/>
+                                    <outlet property="delegate" destination="ivP-ro-me0" id="5O3-px-0Jc"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al2-Hy-U5l">
+                                <rect key="frame" x="81" y="244" width="191" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="getPicker:" destination="ivP-ro-me0" eventType="touchUpInside" id="ozu-dC-KHb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="b4T-YJ-fII"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="w0t-AR-Yig"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="xZT-4h-hry" id="pHB-Du-GNW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5c-Ca-7Gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-9.4452773613193415"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="IXw-1l-LlX">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" id="iGl-0Y-WbB" customClass="OneViewController" customModule="my_ios_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S4u-cr-UeK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="oaq-Lf-qNG">
+                                <rect key="frame" x="28" y="42" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="566982439.04615998">
+                                    <!--2018-12-20 07:07:19 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ6-pR-xMe">
+                                <rect key="frame" x="88" y="281" width="187" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="selected"/>
+                                <connections>
+                                    <action selector="getDatePicker:" destination="iGl-0Y-WbB" eventType="touchUpInside" id="2Fn-Fl-niI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cjm-lY-Qnv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="9Dv-gI-C9i"/>
+                    <connections>
+                        <outlet property="DatePicker" destination="oaq-Lf-qNG" id="mMA-Zk-KZT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3h-lo-Mux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1330.4000000000001" y="-232.53373313343329"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="T5Q-2u-4tp">
+            <objects>
+                <tabBarController id="QTJ-xa-RnU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HTg-c2-3Ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iGl-0Y-WbB" kind="relationship" relationship="viewControllers" id="fu0-be-0Xm"/>
+                        <segue destination="ivP-ro-me0" kind="relationship" relationship="viewControllers" id="Klx-MB-y5x"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIu-if-rqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266" y="-778"/>
         </scene>
     </scenes>
 </document>
